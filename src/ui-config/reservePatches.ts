@@ -77,6 +77,7 @@ export const SYMBOL_NAME_MAP: { [key: string]: string } = {
   ZRX: '0x Coin',
   '1INCH': '1inch Network',
   LUSD: 'LUSD Stablecoin',
+  EURE: 'Monerium EURO',
 };
 
 export function fetchIconSymbolAndName({
@@ -103,6 +104,15 @@ export function fetchIconSymbolAndName({
     underlyingAsset.toLowerCase() === '0xa693B19d2931d498c5B318dF961919BB4aee87a5'.toLowerCase()
   ) {
     return { iconSymbol: 'UST', name: 'UST (Wormhole)', symbol };
+  }
+  if (name === 'USD//C on xDai') {
+    return { iconSymbol: 'USDC', name: 'Bridged Circle USD', symbol };
+  }
+  if (name === 'Tether USD on xDai ') {
+    return { iconSymbol: 'USDT', name: 'Bridged Tether USD', symbol };
+  }
+  if (name === 'Savings xDai') {
+    return { iconSymbol: 'sDAI', name: 'Savings DAI', symbol };
   }
 
   const unifiedSymbol = SYMBOL_MAP[symbol] || symbol;
