@@ -38,7 +38,8 @@ The spark-interface is hosted on IPFS in a decentralized manner. `app.spark.fi` 
 
 Just go to `<your favorite public ipfs gateway>/ipns/app.spark.fi`
 
-⚠️ Make sure the gateway supports origin isolation to avoid possible security issues: you should be redirected to URL that looks like `https://app-spark-fi.<your gateway>`
+> [!NOTE]
+> Make sure the gateway supports origin isolation to avoid possible security issues: you should be redirected to URL that looks like `https://app-spark-fi.<your gateway>`
 
 ## License
 
