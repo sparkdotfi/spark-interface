@@ -61,6 +61,7 @@ export const SYMBOL_NAME_MAP: { [key: string]: string } = {
   REP: 'Augur',
   SAVAX: 'Benqi Staked Avalanche',
   STETH: 'Lido Staked Ether',
+  WEETH: 'Ether.fi Staked ETH',
   STKAAVE: 'Stake Aave',
   TUSD: 'TrueUSD',
   UNI: 'Uniswap',
