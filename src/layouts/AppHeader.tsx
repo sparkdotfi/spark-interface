@@ -58,7 +58,7 @@ export function AppHeader() {
 
   const disableTestnet = () => {
     localStorage.setItem('testnetsEnabled', 'false');
-    // Set window.location to trigger a page reload when navigating to the the dashboard
+    // Set window.location to trigger a page reload when navigating to the dashboard
     window.location.href = '/';
   };
 
