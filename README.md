@@ -26,20 +26,6 @@ Each commit gets deployed to IPFS automatically
 
 There's a github action commenting the appropriate IPFS hash embedded in the Cloudflare IPFS gateway after each commit
 
-For ease of use:
-
-- the DNS of [https://app.spark.fi](https://app.spark.fi) will always point to the latest `spark` IPFS hash with disabled test networks
-
-### Troubleshooting
-
-Issue: I cannot connect to `app.spark.fi`
-
-The spark-interface is hosted on IPFS in a decentralized manner. `app.spark.fi` just holds a CNAME record to the Cloudflare IPFS gateway. You can use [any](https://ipfs.github.io/public-gateway-checker/) public or private IPFS gateway supporting origin isolation to access spark-interface if for some reason the Cloudflare gateway doesn't work for you
-
-Just go to `<your favorite public ipfs gateway>/ipns/app.spark.fi`
-
-⚠️ Make sure the gateway supports origin isolation to avoid possible security issues: you should be redirected to URL that looks like `https://app-spark-fi.<your gateway>`
-
 ## License
 
 [BSD-3-Clause](./LICENSE.md)
